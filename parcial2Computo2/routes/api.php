@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Listar todas las categorías.
+Route::get('juegos','App\Http\Controllers\JuegoController@index');
+
+//Listar una categoría.
+Route::get('juego/{id}','App\Http\Controllers\JuegoController@show');
