@@ -23,3 +23,12 @@ Route::get('juegos','App\Http\Controllers\JuegoController@index');
 
 //Listar una categoría.
 Route::get('juego/{id}','App\Http\Controllers\JuegoController@show');
+
+//Crear una nueva categoría.
+Route::post('juego','App\Http\Controllers\JuegoController@store');
+
+//Actualizar una categoría.
+Route::put('juego','App\Http\Controllers\JuegoController@store');
+
+//Eliminar una categoría.
+Route::delete('juego/{id}','App\Http\Controllers\JuegoController@destroy');
