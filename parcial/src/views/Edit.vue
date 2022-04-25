@@ -16,4 +16,4 @@ export default {
         Edit
     }
 }
-</script>
+ </script>
